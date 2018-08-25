@@ -1,16 +1,43 @@
 header {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: fuchsia;
+}
+
+body {
+  /* Colorzilla - gradient generator - http://colorzilla.com/gradient-editor */
+  background: #b7deed; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, #b7deed 0%, #71ceef 50%, #21b4e2 51%, #b7deed 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, #b7deed 0%,#71ceef 50%,#21b4e2 51%,#b7deed 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b7deed', endColorstr='#b7deed',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .gridCell {
   height: 1fr;
   width: 1fr;
-  border: 1px solid black;
+  border: 1px solid #53b3d6;
 }
 
 .changeColor {
-  background-color: blueviolet;
+  background-color: #ad1283;
+}
+
+#resetBtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+button {
+  padding: 10px;
+  cursor: pointer;
+  /* Colorzilla - gradient generator - http://colorzilla.com/gradient-editor */
+  background: #cb60b3; /* Old browsers */
+  background: -moz-linear-gradient(45deg, #cb60b3 0%, #ad1283 50%, #de47ac 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #cb60b3 0%,#ad1283 50%,#de47ac 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
