@@ -1,5 +1,7 @@
 # JS Etch-a-Sketch
 
+[Live demo](https://cdn.rawgit.com/RossTrang/etch-a-sketch/f7f84edf/index.html)
+
 From [The Odin Project Webdev 101](https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project)
 
 Create a simple Etch-a-Sketch clone.
