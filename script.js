@@ -2,7 +2,9 @@
 Initial values will be set to 16x16.
 The 'Clear' button will also prompt the user to enter dimensions for a new grid. */
 
-let dimensions = 16;
+const sketchPad = document.createElement('div')
+const gridCell = document.createElement('div')
+let dimensions = 32;
 
 document.body.onload = createGrid(dimensions);
 
@@ -12,7 +14,7 @@ function createGrid () {
   sketchPad.className = 'sketchPad';
 
   for (let index = 0; index < dimensions * dimensions; index++) {
-    var gridCell = document.createElement('div')
+    const gridCell = document.createElement('div')
     gridCell.className = 'gridCell';
     sketchPad.appendChild(gridCell);
   }
@@ -23,4 +25,14 @@ function createGrid () {
 
   var currentDiv = document.getElementById('resetBtn'); 
   document.body.insertBefore(sketchPad, currentDiv); 
+
+  // Set listener to change the cell background as mouse moves over
+
+  let cells = sketchPad.getElementsByClassName('gridCell')
+  for (let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener('mouseover', function(event) {
+      event.target.classList.add('changeColor');
+    });
+  }
+
 }

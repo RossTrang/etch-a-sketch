@@ -10,3 +10,7 @@ header {
   width: 1fr;
   border: 1px solid black;
 }
+
+.changeColor {
+  background-color: blueviolet;
+}
