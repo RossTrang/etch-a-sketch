@@ -5,9 +5,12 @@ header {
   align-items: center;
 }
 
-#sketchPad {
-  height: 70vh;
-  width: 70vw;
-  border: 1px black solid;
-  margin: auto;
+.gridCell {
+  height: 1fr;
+  width: 1fr;
+  border: 1px solid black;
+}
+
+.changeColor {
+  background-color: blueviolet;
 }
